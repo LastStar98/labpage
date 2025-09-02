@@ -40,7 +40,7 @@ nav a:hover{color:var(--text);background:var(--surface)}
 .hero{padding:64px 0 32px;display:grid;gap:24px;align-items:center;grid-template-columns:1.2fr .8fr}
 .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
 .hero p{font-size:clamp(16px,2.2vw,18px);margin:0 0 20px;color:var(--muted)}
-.hero-graphic{aspect-ratio:4/3;border:1px dashed var(--border);display:grid;place-items:center;color:var(--muted)}
+.hero-graphic{aspect-ratio:4/3;border:1px solid var(--border);border-radius:var(--radius);display:grid;place-items:center;color:var(--muted);overflow:hidden;box-shadow:var(--shadow)}
 @media(max-width:880px){.hero{grid-template-columns:1fr}}
 /* grid helpers (선택 사항) */
 .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
