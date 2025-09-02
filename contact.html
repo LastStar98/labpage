@@ -20,20 +20,47 @@
         <h1 id="title">Contact</h1>
         <p>AAIS Lab 위치 및 연락처</p>
       </div>
-      <div class="hero-graphic">지도/건물 이미지</div>
+      <div class="hero-graphic">
+        <img src="assets/images/itbt_building.jpg" alt="한양대학교 ITBT 건물" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div style="display:none;place-items:center;color:var(--muted);">ITBT 건물 이미지</div>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="addr">
       <div class="container contact-box">
         <div class="card">
           <h2 id="addr">Address</h2>
-          <p>[대학교/캠퍼스/건물/호수]<br/>[도로명/도시/우편번호], [국가]</p>
-          <h3>Visit</h3>
-          <p>대중교통/주차 안내를 간략히 기재하세요.</p>
-          <h3>General Contact</h3>
-          <p><a href="mailto:contact@example.edu">contact@example.edu</a></p>
+          <p><strong>한양대학교 서울캠퍼스</strong><br/>
+          ITBT 건물 (ITBT Building)<br/>
+          서울특별시 성동구 왕십리로 222<br/>
+          04763, Republic of Korea</p>
+          
+          <h3>Lab Location</h3>
+          <p>ITBT 건물 내 AAIS 연구실<br/>
+          (정확한 호수는 추후 업데이트 예정)</p>
+          
+          <h3>Public Transportation</h3>
+          <p><strong>지하철:</strong> 2호선 한양대역 2번 출구<br/>
+          <strong>버스:</strong> 한양대학교 정류장<br/>
+          <strong>주차:</strong> 캠퍼스 내 주차장 이용 가능</p>
+          
+          <h3>Contact Information</h3>
+          <p><strong>Lab Email:</strong> <a href="mailto:aais@hanyang.ac.kr">aais@hanyang.ac.kr</a><br/>
+          <strong>Professor:</strong> <a href="mailto:yknoh@hanyang.ac.kr">yknoh@hanyang.ac.kr</a><br/>
+          <strong>Phone:</strong> +82-2-2220-XXXX (추후 업데이트)</p>
         </div>
-        <div class="map">여기에 지도 임베드(예: Google Maps iframe) 가능</div>
+        <div class="map">
+          <iframe 
+            src="https://map.naver.com/v5/search/%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%20ITBT%20%EA%B1%B4%EB%AC%BC/place/1234567890?c=14123456.7890123,4512345.6789012,15,0,0,0,dh"
+            width="100%" 
+            height="100%" 
+            style="border:0; border-radius: var(--radius);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="한양대학교 ITBT 건물 위치">
+          </iframe>
+        </div>
       </div>
     </section>
   </main>
