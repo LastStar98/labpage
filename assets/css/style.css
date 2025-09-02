@@ -8,13 +8,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 :root{
   --bg:#ffffff;--text:#0f172a;--muted:#475569;--border:#e2e8f0;--surface:#f8fafc;
   --brand:#0ea5e9;--brand-strong:#0284c7;--accent:#22c55e;
-  --maxw:1400px;--radius:14px;--shadow:0 10px 30px rgba(2,8,23,.08)
+  --maxw:min(90vw, 1600px);--radius:14px;--shadow:0 10px 30px rgba(2,8,23,.08)
 }
 @media(prefers-color-scheme:dark){
   :root{--bg:#0b1220;--text:#e5e7eb;--muted:#9ca3af;--border:#22304a;--surface:#0e172a;--brand:#38bdf8;--brand-strong:#0ea5e9}
   .card{background:#0b1220}
 }
-.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 40px}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px, 4vw, 60px)}
 .section{padding:64px 0}
 .muted{color:var(--muted)}
 .card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
@@ -45,8 +45,31 @@ nav a:hover{color:var(--text);background:var(--surface)}
 /* grid helpers (선택 사항) */
 .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
 .col-12{grid-column:span 12}.col-6{grid-column:span 6}.col-4{grid-column:span 4}.col-3{grid-column:span 3}
-@media(max-width:1000px){.col-3{grid-column:span 4}}
-@media(max-width:700px){.col-6,.col-4,.col-3{grid-column:span 12}}
+/* 반응형 브레이크포인트 */
+@media(max-width:1400px){
+  :root{--maxw:min(95vw, 1200px)}
+}
+@media(max-width:1200px){
+  :root{--maxw:min(95vw, 1000px)}
+}
+@media(max-width:1000px){
+  :root{--maxw:min(95vw, 900px)}
+  .col-3{grid-column:span 4}
+}
+@media(max-width:800px){
+  :root{--maxw:min(95vw, 800px)}
+  .container{padding:0 20px}
+}
+@media(max-width:700px){
+  .col-6,.col-4,.col-3{grid-column:span 12}
+  .person{grid-template-columns:80px auto;gap:16px}
+  .avatar{width:80px;height:80px}
+}
+@media(max-width:500px){
+  .container{padding:0 16px}
+  .person{grid-template-columns:70px auto;gap:12px}
+  .avatar{width:70px;height:70px}
+}
 /* people */
 .person{display:grid;grid-template-columns:120px auto;gap:20px;align-items:center}
 .avatar{width:100px;height:100px;border-radius:20px;border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:700;background:
@@ -74,5 +97,3 @@ footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font
 /* skip link */
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:var(--brand);color:#fff;border-radius:8px;z-index:9999}
-
-
