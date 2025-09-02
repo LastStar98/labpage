@@ -8,7 +8,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 :root{
   --bg:#ffffff;--text:#0f172a;--muted:#475569;--border:#e2e8f0;--surface:#f8fafc;
   --brand:#0ea5e9;--brand-strong:#0284c7;--accent:#22c55e;
-  --maxw:2000px;--radius:14px;--shadow:0 10px 30px rgba(2,8,23,.08)
+  --maxw:1800px;--radius:14px;--shadow:0 10px 30px rgba(2,8,23,.08)
 }
 @media(prefers-color-scheme:dark){
   :root{--bg:#0b1220;--text:#e5e7eb;--muted:#9ca3af;--border:#22304a;--surface:#0e172a;--brand:#38bdf8;--brand-strong:#0ea5e9}
@@ -73,3 +73,4 @@ footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font
 /* skip link */
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:var(--brand);color:#fff;border-radius:8px;z-index:9999}
+
