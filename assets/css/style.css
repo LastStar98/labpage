@@ -88,7 +88,7 @@ nav a:hover{color:var(--text);background:var(--surface)}
 .pub .title{font-weight:700;margin:6px 0}
 /* contact */
 .contact-box{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}
-.map{height:280px;border:1px dashed var(--border);border-radius:var(--radius);display:grid;place-items:center;color:var(--muted)}
+.map{height:400px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
 @media(max-width:880px){.contact-box{grid-template-columns:1fr}}
 /* footer */
 footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:14px}
