@@ -55,6 +55,9 @@ nav a:hover{color:var(--text);background:var(--surface)}
 @media(max-width:1000px){
   :root{--maxw:min(95vw, 900px)}
   .col-3{grid-column:span 4}
+  .person{grid-template-columns:180px auto 180px;gap:18px}
+  .avatar{width:180px;height:180px;border-radius:28px}
+  .avatar img{border-radius:28px}
 }
 @media(max-width:800px){
   :root{--maxw:min(95vw, 800px)}
@@ -62,13 +65,15 @@ nav a:hover{color:var(--text);background:var(--surface)}
 }
 @media(max-width:700px){
   .col-6,.col-4,.col-3{grid-column:span 12}
-  .person{grid-template-columns:80px auto;gap:16px}
-  .avatar{width:80px;height:80px}
+  .person{grid-template-columns:150px auto 120px;gap:16px}
+  .avatar{width:150px;height:150px;border-radius:25px}
+  .avatar img{border-radius:25px}
 }
 @media(max-width:500px){
   .container{padding:0 16px}
-  .person{grid-template-columns:70px auto;gap:12px}
-  .avatar{width:70px;height:70px}
+  .person{grid-template-columns:120px auto 100px;gap:12px}
+  .avatar{width:120px;height:120px;border-radius:20px}
+  .avatar img{border-radius:20px}
 }
 /* people */
 .person{display:grid;grid-template-columns:200px auto 200px;gap:20px;align-items:center}
