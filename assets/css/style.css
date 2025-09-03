@@ -71,16 +71,17 @@ nav a:hover{color:var(--text);background:var(--surface)}
   .avatar{width:70px;height:70px}
 }
 /* people */
-.person{display:grid;grid-template-columns:120px auto;gap:20px;align-items:center}
-.avatar{width:100px;height:100px;border-radius:20px;border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:700;background:
+.person{display:grid;grid-template-columns:200px auto 200px;gap:20px;align-items:center}
+.avatar{width:200px;height:200px;border-radius:30px;border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:700;background:
   radial-gradient(40% 40% at 30% 30%,color-mix(in oklab,var(--brand) 70%,white),transparent),
   linear-gradient(135deg,color-mix(in oklab,var(--surface) 80%,transparent),transparent);overflow:hidden;flex-shrink:0}
-.avatar img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:30px}
 .name{font-weight:800;margin:0}
 .role{margin:6px 0;color:var(--muted)}
 .links{display:flex;gap:10px;flex-wrap:wrap}
 .links a{color:var(--brand-strong);font-weight:600}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;font-size:12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted)}
+.department{text-align:right;color:var(--muted);font-size:14px;font-weight:600}
 /* pubs */
 .pub-list{display:flex;flex-direction:column;gap:12px}
 .pub{border:1px solid var(--border);border-radius:var(--radius);padding:12px}
