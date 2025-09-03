@@ -18,9 +18,8 @@
     <section class="container hero" aria-labelledby="title">
       <div>
         <h1 id="title">Principal Investigator</h1>
-        <!-- <p>AAIS Lab을 이끄는 지도교수님을 소개합니다.</p> -->
       </div>
-      <div class="hero-graphic">프로필 사진/배너</div>
+      <div class="hero-graphic" aria-hidden="true">프로필 사진/배너</div>
     </section>
 
     <section class="section" aria-labelledby="pi-title">
@@ -34,14 +33,23 @@
           </div>
           <div>
             <h3 class="name">Yung-Kyun Noh <span class="chip">Professor</span></h3>
-            <div class="role">[대학/학과] · 한양대학교 컴퓨터소프트웨어학과</div>
-            <div class="links">
+            <div class="role">한양대학교 &middot; Department of Computer Science</div>
+            <div class="meta" style="margin-top:4px;">
+              <span class="chip" title="조기 정교수 승진">Early Promotion to Full Professor</span>
+              <span class="chip">Director, Generative AI Research Center</span>
+              <span class="chip">Chair, Dept. of Artificial Intelligence</span>
+            </div>
+            <div class="links" style="margin-top:8px;">
               <!-- TODO: 실제 링크로 교체 -->
               <a href="#" aria-label="Google Scholar">Google Scholar</a>
-              <!-- <a href="#" aria-label="DBLP">DBLP</a> -->
-              <a href="#" aria-label="CV">CV</a>
+              <a href="#" aria-label="CV">CV (PDF)</a>
               <a href="#" aria-label="Homepage">Website</a>
+              <a href="mailto:nohyung@hanyang.ac.kr" aria-label="Email">nohyung@hanyang.ac.kr</a>
             </div>
+            <p class="small" style="margin-top:8px;">
+              Work address: 605 IT/BT, 222 Wangsimni-ro, Seongdong-gu, Seoul 04763, Republic of Korea · +82-2-2220-1409
+            </p>
+            <!-- Source: CV details on positions, early promotion, work address, and email :contentReference[oaicite:0]{index=0} -->
           </div>
         </article>
 
@@ -51,17 +59,26 @@
               <h4>Research Interests</h4>
               <ul>
                 <li>Machine Learning</li>
-                <li>Generative & Diffusion Models</li>
-                <li>Nearest Neighbor Algorithms / Metric Learning</li>
+                <li>Generative &amp; Diffusion Models</li>
+                <li>Nearest Neighbor Algorithms &amp; Metric Learning</li>
                 <li>Information Theory</li>
                 <li>Biomedical Applications</li>
               </ul>
+              <!-- Sourced from CV research interests and publication themes :contentReference[oaicite:1]{index=1} -->
             </div>
           </div>
+
           <div class="col-12">
             <div class="card">
               <h4>Short Bio</h4>
-              <p>[학력/경력]</p>
+              <ul>
+                <li><strong>Professor</strong>, Dept. of Computer Science, Hanyang University (2025– ); 조기 정교수 승진(연구실적 1200% 초과). <span class="small">Director, Generative AI Research Center (2025– ), Chair, Dept. of Artificial Intelligence (2022– ).</span></li>
+                <li><strong>Visiting Fellow</strong>, Department of Radiology, Weill Cornell Medicine, New York (Feb–May 2025).</li>
+                <li><strong>Affiliate Professor</strong>, School of Computational Sciences, KIAS (2021– ); <strong>Visiting Scientist</strong>, RIKEN AIP (2018– ).</li>
+                <li><strong>Education</strong>: Ph.D. in Computer Science (Interdisciplinary Program in Cognitive Science), Seoul National University (2011); B.S. in Physics, POSTECH (1998); Visiting Scholar, GRASP Lab, University of Pennsylvania (2007–2012).</li>
+                <li><strong>Research Focus</strong>: 이론적·통계적 머신러닝, 최근린 정보 활용(메트릭/정보추정), 확산 생성모델의 물리·수학적 원리 및 의학 응용.</li>
+              </ul>
+              <!-- CV-sourced: appointments, affiliations, education, and focus areas :contentReference[oaicite:2]{index=2} -->
             </div>
           </div>
         </div>
@@ -69,11 +86,35 @@
         <div class="card" style="margin-top:16px;">
           <h4>Selected Publications</h4>
           <ul>
-            <li>[2025] Title A — Venue A (<a href="publications.html">더 보기</a>)</li>
-            <li>[2024] Title B — Venue B</li>
-            <li>[2023] Title C — Venue C</li>
+            <li>[2025] Ahn, J.C., <strong>Noh, Y.-K.</strong>, et al. <em>AI-driven synthetic data generation for accelerating hepatology research</em>, <strong>Hepatology</strong>. Epub ahead of print. <!-- :contentReference[oaicite:3]{index=3} --></li>
+            <li>[2024] Yoon, S., Hwang, H., Kwon, D., <strong>Noh, Y.-K.</strong>, Park, F.C. <em>Maximum Entropy IRL of Diffusion Models with EBMs</em>, <strong>NeurIPS 37</strong> (oral). <!-- :contentReference[oaicite:4]{index=4} --></li>
+            <li>[2024] Khanal, S., <strong>Noh, Y.-K.</strong>, et al. <em>Glycolysis in hepatic stellate cells...</em>, <strong>Science Advances</strong>, 10(26):eadn5228. <!-- :contentReference[oaicite:5]{index=5} --></li>
+            <li>[2023] Jang, C., Lee, Y., <strong>Noh, Y.-K.</strong>, Park, F.C. <em>Geometrically Regularized Autoencoders for Non-Euclidean Data</em>, <strong>ICLR</strong>. <!-- :contentReference[oaicite:6]{index=6} --></li>
+            <li>[2023] Lee, J.-W., Won, J.-H., ... <strong>Noh, Y.-K.</strong>, Joo, K. <em>DeepFold</em>, <strong>Bioinformatics</strong>, 39(12):btad712. <!-- :contentReference[oaicite:7]{index=7} --></li>
+            <li>[2018] <strong>Noh, Y.-K.</strong>, Zhang, B.-T., Lee, D.D. <em>Generative Local Metric Learning for Nearest Neighbor Classification</em>, <strong>TPAMI</strong>, 40(1):106–118. <!-- :contentReference[oaicite:8]{index=8} --></li>
           </ul>
+          <p class="small"><a href="publications.html">전체 논문 보기</a></p>
         </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h4>Teaching (Recent)</h4>
+          <ul>
+            <li>Artificial Intelligence Paper Reading (Spring 2025)</li>
+            <li>Artificial Intelligence (Fall 2024)</li>
+            <li>Machine Learning Algorithms (Spring 2024)</li>
+          </ul>
+          <!-- Sourced from CV teaching section :contentReference[oaicite:9]{index=9} -->
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h4>Grants (PI)</h4>
+          <ul>
+            <li>NRF Korea (2024–2029): <em>Exploration of Mathematical Principles in AI and Big Data Analysis</em>.</li>
+            <li>Samsung Research Funding (2019–2022): <em>Probability-density-based nearest neighbor prediction</em>.</li>
+          </ul>
+          <!-- Sourced from CV grants section :contentReference[oaicite:10]{index=10} -->
+        </div>
+
       </div>
     </section>
   </main>
@@ -84,5 +125,3 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
