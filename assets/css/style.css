@@ -103,3 +103,21 @@ footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font
 /* skip link */
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:var(--brand);color:#fff;border-radius:8px;z-index:9999}
+.card.person {
+  padding: 28px 24px;          /* 카드 내부 여백 확대 */
+}
+
+.card.person .name {
+  margin-bottom: 10px;         /* 이름과 연구 키워드 간격 */
+}
+
+.card.person .research {
+  font-weight: 700;            /* 굵은 글씨 */
+  margin-bottom: 12px;         /* 연구 키워드와 자기소개 간격 */
+  color: var(--text);          /* 본문 색상(강조 효과) */
+}
+
+.card.person .role {
+  margin-bottom: 14px;         /* 자기소개와 링크 간격 */
+  line-height: 1.7;            /* 가독성을 위한 줄간격 */
+}
